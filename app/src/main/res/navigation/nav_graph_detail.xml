@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_detail"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.parentchidrennav.screens.homes.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_moreScreen"
+            app:destination="@id/moreScreen" />
+        <action
+            android:id="@+id/toCounterScreen"
+            app:destination="@id/counterScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreScreen"
+        android:name="com.example.parentchidrennav.screens.mores.MoreScreen"
+        android:label="fragment_more_screen"
+        tools:layout="@layout/fragment_more_screen" />
+    <fragment
+        android:id="@+id/counterScreen"
+        android:name="com.example.parentchidrennav.screens.mores.CounterScreen"
+        android:label="fragment_counter_screen"
+        tools:layout="@layout/fragment_counter_screen" />
+</navigation>

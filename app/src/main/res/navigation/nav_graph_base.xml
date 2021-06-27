@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_base"
+    app:startDestination="@id/baseScreen">
+
+    <fragment
+        android:id="@+id/baseScreen"
+        android:name="com.example.parentchidrennav.screens.BaseScreen"
+        android:label="fragment_base_screen"
+        tools:layout="@layout/fragment_base_screen" >
+        <action
+            android:id="@+id/action_baseScreen_to_alertScreen"
+            app:destination="@id/alertScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/alertScreen"
+        android:name="com.example.parentchidrennav.screens.AlertScreen"
+        android:label="fragment_alert_screen"
+        tools:layout="@layout/fragment_alert_screen" />
+</navigation>

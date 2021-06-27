@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.homes.HomeScreen"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvHomeScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home Screen"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvNavToCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nav To Counter"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:paddingVertical="10dp"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.parentchidrennav.screens.mores.CounterScreen"/>
+
+</LinearLayout>
